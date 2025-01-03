@@ -1,0 +1,540 @@
+
+html,body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px; 
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+/* Work in Progress Bar */
+.work-in-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    z-index: 1050; /* Ensure it stays above other content */
+}
+
+/* Rotating dumbbell */
+.loading-icon {
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite; /* Rotates continuously */
+    margin-left: 15px;
+    filter: invert(100%) grayscale(100%) contrast(100%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 2.5rem;
+    padding: 10px 20px;
+    z-index: 1000; 
+    background-color: #000;
+    position: fixed; /* Fix the navbar to the top */
+    width: 100%; /* Make sure the navbar takes the full width */
+    left: 0; /* Ensure the navbar is aligned to the left */
+    right: 0; /* Ensure the navbar is aligned to the right */
+}
+
+.navbar .logo img {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    height: 30px;;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.navbar .nav-links .dropdown,
+.navbar .nav-links .list-gym {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links .dropdown i,
+.navbar .nav-links .list-gym i {
+    margin-left: 5px;
+}
+
+.navbar .nav-links .signup {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.navbar .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    html,body {
+        scroll-behavior: smooth;
+        scroll-padding-top: 4rem;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        /* display: none; */
+    }
+
+    .navbar .nav-links a {
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar .nav-links .dropdown,
+    .navbar .nav-links .list-gym {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar .nav-links .signup {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+
+
+.hero-section {
+    background: url("../images/ai-generated-exercise-machines-in-a-gym-free-photo.jpg") no-repeat center center;
+     background-size: cover;
+    color: white;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+    
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .btn {
+    font-size: 1.4rem;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out; /* Set transition properties here */
+    background-color: #000;
+}
+
+.hero-section .btn:hover {
+    transform: scale(1.1);
+    background-color: #000;
+}
+
+.section-padding {
+    padding: 60px 0;
+    padding-top: 10%;
+}
+
+.feature-list ul {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.feature-list li {
+    margin: 15px 0;
+}
+
+.feature-list h4 {
+    /* font-size: 1.2rem; */
+    font-weight: bold;
+}
+
+.feature-list p {
+    /* font-size: 1rem; */
+    color: #555;
+}
+
+.feature-list i {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+.card {
+    border: 1px solid #ddd; /* Light gray border around the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space between the cards */
+}
+
+.card-body {
+    padding: 20px; /* Add padding inside the card */
+}
+
+.card-title {
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.card-text {
+    color: #555; /* Slightly darker text color for the description */
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer {
+    background-color: #000;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer .left, .footer .center, .footer .right {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+.footer .left img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.footer .left p {
+    margin-bottom: 20px;
+}
+.footer .left form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 5%;
+}
+.footer .left input[type="email"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+.footer .left button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer .center, .footer .right {
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer .center h3, .footer .right h3 {
+    margin-bottom: 10px;
+}
+.footer .center a, .footer .right a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.footer .right a {
+    display: flex;
+    align-items: center;
+    padding-left: 40%;
+}
+.footer .right a i {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.footer .bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+.footer .bottom a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* form */
+/* .container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+.container h2 {
+    margin-top: 0;
+    font-size: 24px;
+} */
+
+
+#signup {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    /* height: 100vh; Ensure the section takes full viewport height */
+    /* padding: 0 20px; Add padding on the sides for some spacing */
+    background-color: #000;
+    color: white;
+
+}
+
+.form-container {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px; /* Set a maximum width to prevent form from being too wide */
+    box-sizing: border-box;
+    /* margin-top: 20px; Add some space above the form */
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+#submitBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+    .hero-section .btn {
+        font-size: 1.1rem;
+        padding: 10px 30px;
+    }
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer .timer {
+        font-size: 1rem;
+    }
+
+    .feature-list .col-md-6 {
+        margin-bottom: 20px;
+    }
+    .footer .right a {
+        display: flex;
+        align-items: center;
+        padding-left: 30%;
+    }
+}
+
+
+.neon-sign {
+font-size: 20px;
+font-weight: bold;
+color: #fff;
+text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000;
+animation: neon-glow 1s infinite alternate;
+}
+
+@keyframes neon-glow {
+from {
+text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00;
+}
+to {
+text-shadow: 0 0 10px rgb(234, 0, 255), 0 0 20px rgb(255, 0, 242), 0 0 30px rgb(255, 0, 234);
+}
+}
+
+.blog-content {
+    padding: 60px 0;
+}
+
+.blog-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.blog-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.blog-content .btn {
+    font-size: 1.2rem;
+    padding: 12px 40px;
+    border-radius: 50px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+}
+
+.blog-content .btn:hover {
+    background-color: #f57c00;
+}
+
+@media (max-width: 767px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    html,body{
+        scroll-behavior: smooth;
+    }
+
+    .hero-section .btn {
+        font-size: 1.1rem;
+        padding: 10px 30px;
+    }
+
+
+    .navbar .nav-links {
+        display: none;
+    }
+    .form-inline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer .timer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 435px){
+    /* .navbar{
+        top: 3rem;
+
+    } */
+
+    .work-in-progress{
+        font-size:  0.8rem;
+       }
+}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- Title and Description for SEO -->
+<title>X-Fit - The Future of Fitness</title>
+ <meta name="description" content="X-Fit is your go-to platform to find trusted, verified gyms near you. Simplify your fitness journey and discover local gyms with ease. Join the X-Fit movement today!">
+ 
+ <!-- Keywords for SEO -->
+ <meta name="keywords" content="fitness, gyms, X-Fit, gym near me, best gyms, fitness journey, verified gyms, workout space, gym recommendations, Bangalore gyms">
+ 
+ <!-- Author Information -->
+ <meta name="author" content="X-Fit Team">
+ 
+ <!-- Open Graph Meta Tags (For social media sharing) -->
+ <meta property="og:title" content="X-Fit - The Future of Fitness">
+ <meta property="og:description" content="X-Fit helps you find verified, high-quality gyms in your area with ease. Join the X-Fit movement and get fit without the hassle of endless searching.">
+ <meta property="og:image" content="static/images/xfit-logo.png">
+ <meta property="og:url" content="https://www.xfit.com">
+ <meta property="og:type" content="website">
+ 
+ <!-- Twitter Card Meta Tags -->
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="X-Fit - The Future of Fitness">
+ <meta name="twitter:description" content="Join the X-Fit movement and easily discover gyms near you. Find verified gyms and fitness spaces that suit your needs.">
+ <meta name="twitter:image" content="static/images/xfit-logo.png">
+    
+    <title>X-Fit - The Future of Fitness</title>
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome CDN link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+        <!-- Work in Progress Bar -->
+        <div class="work-in-progress" id="home">
+            <span> Website in progress - One Rep at a time!</span>
+            <img  src="https://cdn.pixabay.com/photo/2020/05/04/01/37/dumbbell-5127417_1280.png" alt="Loading..."
+                class="loading-icon">
+        </div>
+        <!-- NavBar -->
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#"><img src="static/images/xfit.jpg" alt="XFit Logo" /></a></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            <div class="nav-links">
+                <a href="#top">Home</a>
+                <!-- <a href="#signup" class="dropdown">Explore Our Category <i class="fas fa-chevron-down"></i></a> -->
+                <!-- <a href="#signup" class="list-gym">List Your Gym <i class="fas fa-plus"></i></a> -->
+                <a href="#features">Why X-Fit</a>
+                <a href="#signup">Contact</a>
+                <a href="#about">About</a>
+                <!-- <a href="#signup">Login</a>
+                                                                                                <a href="#signup" class="signup">Sign Up</a> -->
+            </div>
+            </div>
+    </header>
+
+    <section class="hero-section">
+        <h1>The Future of Fitness – Coming This Summer</h1>
+        <a href="#signup" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get Early Access</a>
+    </section>
+
+    <section class="section-padding" id="about">
+        <div class="container text-justify">
+            <div class="row">
+                <div class="col-md-4">
+            <h2><b>What is X-Fit</b></h2>
+        </div>
+        <div class="col-md-8">
+            <p>X-Fit is your all-in-one fitness platform, connecting you with high-quality gyms and personalized fitness centers.
+                Discover tailored gym recommendations, manage memberships, and access fitness products—all in one place. Empowering
+                your fitness journey, X-Fit simplifies and personalizes wellness like never before.</p>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <section class="section-padding" id="features">
+        <div class="container">
+            <h2 class="text-center mb-4"><b>Why Choose X-Fit</b></h2>
+            <br>
+            <div class="row feature-list">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Find Gyms Near You</h4>
+                    <p>Locate gyms that match your fitness goals and location.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Transparent Gym Profiles</h4>
+                    <p>Get detailed gym profiles with reviews, pricing, and available services.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fas fa-dumbbell"></i>
+                    <h4>Gym Accessories & Services</h4>
+                    <p>Browse a range of gym accessories and services to enhance your workout.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <i class="fas fa-bullseye"></i>
+                    <h4>Tailored Recommendations</h4>
+                    <p>Get personalized gym and fitness recommendations based on your preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="how-it-works">
+        <div class="container">
+            <h2 class="text-center mb-4"><b>How It Works</b></h2>
+            <div class="row">
+                <!-- Step 1 -->
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Explore Gyms</h4>
+                            <p class="card-text">Browse verified gyms with detailed assessments of quality, cleanliness, and gym amenities.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Choose Your Plan</h4>
+                            <p class="card-text">Select from flexible membership tiers that suit your needs and budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Transform Your Body</h4>
+                            <p class="card-text">Enjoy value-added services like fitness accessories, protein-packed meals, and online training.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <section class="section-padding" id="signup">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center">Be the First to Experience X-Fit</h2>
+            <div class="form-container">
+                <form id="signupForm" method="post" action="">
+                    <div class="form-group">
+                        <label for="source">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="source">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+                        <div id="emailError" class="error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="source">Phone Number</label>
+                        <input type="tel" class="form-control" name="whatsapp" id="whatsapp" placeholder="Enter your WhatsApp number" required>
+                        <div id="phoneError" class="error"></div>
+                    </div>
+
+                    <!-- New Dropdown for Metro Cities -->
+                    <div class="form-group">
+                        <label for="city">Select your city</label>
+                        <select id="city" name="city" class="form-control" required>
+                            <option value="ahmedabad">Ahmedabad</option>
+                            <option value="bangalore" selected>Bangalore</option>
+                            <option value="chandigarh">Chandigarh</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="pune">Pune</option>
+                            <option value="surat">Surat</option>
+                        </select>
+                    </div>
+    
+                    <!-- New Textbox with Question -->
+                    <div class="form-group">
+                        <label for="source">Where did you hear about us?</label>
+                        <select id="source" name="source" class="form-control" required onchange="toggleOtherField()">
+                            <option value="social_media">Social Media</option>
+                            <option value="friend_referral">Friend Referral</option>
+                            <option value="online_ads">Online Ads</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                     
+    
+                    <div class="form-group" id="otherField" style="display: none;">
+                        <input type="text" class="form-control" name="other_source" id="other_source" placeholder="Please specify">
+                    </div>
+    
+                    <input type="hidden" id="date" name="date">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Sign Up Now!</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+         <div class="left">
+            <img alt="X-Fit. logo" src="static/images/xfit.jpg" />
+            <p>
+                Join our newsletter to stay up to date on features and releases.
+            </p>
+            <!--<form>-->
+            <!--    <input placeholder="Enter your email" type="email" />-->
+            <!--    <button type="submit">-->
+            <!--        SUBSCRIBE-->
+            <!--    </button>-->
+            <!--</form>-->
+            <!--<p>-->
+            <!--    By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.-->
+            <!--</p>-->
+            </div>
+        <div class="center">
+            <h3>
+                Gym
+            </h3>
+            <a href="#signup">
+                Memberships
+            </a>
+            <a href="#signup">
+                Contact
+            </a>
+            <a href="#signup">
+                Locations
+            </a>
+            <a href="#signup">
+                Reviews
+            </a>
+        </div>
+        <div class="center">
+            <h3>
+                Company
+            </h3>
+            <a href="#features">
+                Why X-Fit
+            </a>
+            <a href="#signup">
+                Careers
+            </a>
+            <a href="#signup">
+                Blog
+            </a>
+            <a href="#signup">
+                Testimonials
+            </a>
+            <a href="#signup">
+                Partnerships
+            </a>
+        </div>
+        <div class="right">
+            <h3>
+                Follow Us
+            </h3>
+            <!-- <a href = "https://www.facebook.com/profile.php?id=61570862894369">
+                <i class="fab fa-facebook">
+                </i>
+                Facebook
+            </a> -->
+            <!-- <a>
+                <i class="fab fa-instagram">
+                </i>
+                Instagram
+            </a>
+            <a>
+                <i class="fa-brands fa-x-twitter">
+                </i>
+                X
+            </a> -->
+            <a href = "https://www.linkedin.com/company/xfitindia/" target="_blank">
+                <i class="fab fa-linkedin">
+                </i>
+                LinkedIn
+            </a>
+            <!-- <a>
+                <i class="fab fa-youtube">
+                </i>
+                YouTube
+            </a> -->
+        </div>
+        <div class="bottom">
+            <p>
+                © 2025 X-Fit. All rights reserved.
+            </p>
+            <a>
+                Privacy Policy
+            </a>
+            <a>
+                Terms of Service
+            </a>
+            <a>
+                Cookies Settings
+            </a>
+        </div>
+    </footer> 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    };
+
+    </script> -->
+
+    <script>
+        let menuOpen = false; // Track menu state
+
+function toggleMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (!menuOpen) {
+    hamburger.classList.add('open'); // Add class for open state (optional)
+    navLinks.classList.add('active'); // Show the navigation menu
+    navLinks.style.display = 'flex';
+    menuOpen = true;
+  } else {
+    hamburger.classList.remove('open'); // Remove open state class (optional)
+    navLinks.classList.remove('active'); // Hide the navigation menu
+    navLinks.style.display = 'none';
+    menuOpen = false;
+  }
+}
+
+// Function to determine if the current view is mobile
+function isMobileView() {
+  return window.innerWidth <= 768; // Adjust threshold as per your design
+}
+
+// Close the menu when clicking a link inside the nav (only for mobile)
+const navLinks = document.querySelectorAll('.nav-links a'); // Select all links
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (isMobileView()) {
+      toggleMenu(); // Call toggleMenu() to close
+    }
+  });
+});
+
+      </script>
+<!-- 
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+    
+            // Toggle the active class
+            navLinks.classList.toggle('active');
+    
+            // If the menu is active, set display to flex immediately
+            if (navLinks.classList.contains('active')) {
+                navLinks.style.display = 'flex';
+            } else {
+                // Wait for the transition to finish before setting display to none
+                setTimeout(() => {
+                    if (!navLinks.classList.contains('active')) {
+                        navLinks.style.display = 'none';
+                    }
+                }, 300); // Match this duration with the CSS transition duration
+            }
+        }
+    
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', function(event) {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            const footerLinks = document.querySelectorAll('.footer-link');
+    
+            // Check if the click was outside the nav links and hamburger
+            if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
+                // Check if the clicked element is not a footer link
+                if (![...footerLinks].includes(event.target)) {
+                    navLinks.classList.remove('active');
+                    // Wait for the transition to finish before setting display to none
+                    setTimeout(() => {
+                        navLinks.style.display = 'none';
+                    }, 300); // Match this duration with the CSS transition duration
+                }
+            }
+        });
+    
+        // Close the menu when clicking on a nav link
+        const navItems = document.querySelectorAll('.nav-links a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.remove('active');
+                navLinks.style.display = 'none';
+            });
+        });
+    
+        // Attach the toggleMenu function to the hamburger icon
+        document.querySelector('.hamburger').addEventListener('click', toggleMenu);
+    </script> -->
+
+
+<!-- <script>
+    $(document).ready(function() {
+        // Smooth scrolling for all links with href starting with #
+        $('a[href^="#"]').on('click', function(event) {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var target = this.hash;
+
+// Animate the scroll to the top first
+$('html, body').animate({
+scrollTop: 0
+}, 400, function() {
+// After scrolling to the top, scroll to the target section
+$('html, body').animate({
+scrollTop: $(target).offset().top
+}, 800, function() {
+// Update the URL hash without jumping
+window.location.hash = target;
+});
+});
+                });
+    });
+    </script> -->
+
+<script>
+    // Function to toggle the "Other" text input visibility
+    function toggleOtherField() {
+        const source = document.getElementById('source').value;
+        const otherField = document.getElementById('otherField');
+        if (source === 'other') {
+            otherField.style.display = 'block';
+        } else {
+            otherField.style.display = 'none';
+        }
+    }
+    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwa7udWyL_BJIjDevIWZYbYYflS7r5pwW9Z5L35_hLQcWgbPGi6ravzgSRZ5Pa6CLwB/exec';
+    const form = document.getElementById('signupForm');
+
+    // Email Validation
+    function validateEmail(email) {
+        const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return regex.test(email);
+    }
+
+    // Phone Number Validation
+    function validatePhone(phone) {
+        const regex = /^[0-9]{10,15}$/; // A simple phone number validation
+        return regex.test(phone);
+    }
+
+    // Function to format date as yyyy-mm-dd hour:minute:sec
+    function formatDate(date) {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0'); // Month is 0-indexed, so add 1
+        const day = String(date.getDate()).padStart(2, '0');
+        const hour = String(date.getHours()).padStart(2, '0');
+        const minute = String(date.getMinutes()).padStart(2, '0');
+        const second = String(date.getSeconds()).padStart(2, '0');
+
+        return `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+    }
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        // Get the current date and format it
+        const currentDate = new Date();
+        const formattedDate = formatDate(currentDate);
+
+        // Set the formatted date in the hidden input field
+        document.getElementById('date').value = formattedDate;
+
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('whatsapp').value;
+        let valid = true;
+
+        // Clear previous errors
+        document.getElementById('emailError').textContent = '';
+        document.getElementById('phoneError').textContent = '';
+
+        if (!validateEmail(email)) {
+            document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+            valid = false;
+        }
+
+        if (!validatePhone(phone)) {
+            document.getElementById('phoneError').textContent = 'Please enter a valid phone number.';
+            valid = false;
+        }
+
+        if (valid) {
+            // Change button text to "Submitting..." and disable it
+            const submitButton = document.getElementById('submitBtn');
+            submitButton.textContent = 'Submitting...';
+            submitButton.disabled = true;
+
+            const formData = new FormData(form);
+            const email_body = createMailBody(formData.get('name'));
+            formData.append('email_body' , email_body);
+            
+            // Fetch the IP address asynchronously
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    const ipAddress = data.ip; // The IP address is returned here
+                    formData.append('ip_address', ipAddress); // Append the IP address
+                    // Submit the form after appending the IP address
+                    console.log("adding IP")
+                    return fetch(scriptURL, { method: 'POST', body: formData });
+                })
+                .then(response => {
+                    alert("Thank you! Form is submitted");
+
+                    // Clear the form fields after successful submission
+                    form.reset();
+                    const textbox = document.getElementById("otherField");
+                        textbox.style.display = "none";
+
+                    // Optionally, show a success message or redirect
+                })
+                .then(() => {
+                    // Re-enable the button and reset its text after submission
+                    submitButton.textContent = 'Sign Up Now!';
+                    submitButton.disabled = false;
+                })
+                .catch(error => {
+                    // Handle any errors
+                    console.error('Error!', error.message);
+                    submitButton.textContent = 'Sign Up Now!';
+                    submitButton.disabled = false;
+                });
+        }
+    });
+
+</script>
+
+<script src="register_email.js"></script>
+</body>
+</html>
