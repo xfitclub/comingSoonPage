@@ -192,6 +192,7 @@ select option {
         margin: 0.3125rem 0; /* 5px 0 */
         width: 100%;
         text-align: left;
+        display: none;
     }
 
     .navbar .nav-links .dropdown,
@@ -210,6 +211,47 @@ select option {
         position: absolute;
         right: 1.25rem; /* 20px */
         top: 0.625rem; /* 10px */
+    }
+
+    .hero-section h1 {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .hero-section .btn {
+        font-size: 1.1rem;
+        padding: 0.625rem 1.875rem; /* 10px 30px */
+    }
+
+    .section-padding {
+        padding: 2.5rem 0; /* 40px 0 */
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 0.9375rem; /* 15px */
+    }
+
+    .form-control {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer .timer {
+        font-size: 1rem;
+    }
+
+    .feature-list .col-md-6 {
+        margin-bottom: 1.25rem; /* 20px */
+    }
+    .footer .right a {
+        display: flex;
+        align-items: center;
+        padding-left: 30%; /* 30% */
     }
 }
 
@@ -259,7 +301,7 @@ select option {
         text-shadow: 0 0 5px #ffffff; /* Initial glow */
     }
     100% {
-        text-shadow: 0 0 20px #0044ff, 0 0 30px #0044ff; /* Stronger glow */
+        text-shadow: 0 0 20px #0044ff, 0 0 20px #0044ff; /* Stronger glow */
     }
 }
 
@@ -279,32 +321,30 @@ select option {
 }
 
 .section-padding {
-    padding: 3.75rem 0; /* 60px 0 */
+    padding: 3.75rem 0; 
 }
 
 .feature-list ul {
     list-style: none;
-    padding-top: 0.3125rem; /* 5px */
+    padding-top: 0.3125rem; 
 }
 
 .feature-list li {
-    margin: 0.9375rem 0; /* 15px 0 */
+    margin: 0.9375rem 0; 
 }
 
 .feature-list h4 {
-    /* font-size: 1.2rem; */
     font-weight: bold;
 }
 
 .feature-list p {
-    /* font-size: 1rem; */
     color: #555;
 }
 
 .feature-list i {
-    font-size: 2.5rem; /* 2.5rem */
+    font-size: 2.5rem; 
     color: #000;
-    margin-bottom: 0.9375rem; /* 15px */
+    margin-bottom: 0.9375rem; 
 }
 
 .card {
@@ -316,6 +356,7 @@ select option {
 
 .card-body {
     padding: 1.25rem; /* 20px */
+    min-height: 13rem;
 }
 
 .card-title {
@@ -491,51 +532,6 @@ select option {
     font-size: 0.75rem; /* 12px */
 }
 
-@media (max-width: 992px) {
-    .hero-section h1 {
-        font-size: 0.875rem; /* 14px */
-    }
-
-    .navbar .nav-links {
-        display: none;
-    }
-    .hero-section .btn {
-        font-size: 1.1rem;
-        padding: 0.625rem 1.875rem; /* 10px 30px */
-    }
-
-    .section-padding {
-        padding: 2.5rem 0; /* 40px 0 */
-    }
-
-    .form-inline {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form-group {
-        width: 100%;
-        margin-bottom: 0.9375rem; /* 15px */
-    }
-
-    .form-control {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .footer .timer {
-        font-size: 1rem;
-    }
-
-    .feature-list .col-md-6 {
-        margin-bottom: 1.25rem; /* 20px */
-    }
-    .footer .right a {
-        display: flex;
-        align-items: center;
-        padding-left: 30%; /* 30% */
-    }
-}
 
 .neon-sign {
     font-size: 1.25rem; /* 20px */
@@ -635,3 +631,70 @@ select option {
         font-size: 3rem; /* 3rem */
     }
 }
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #whatsxfit{
+        margin-top: 8rem;
+        margin-left: -4rem;
+    }
+
+    .card {
+        border: 0.0625rem solid #ddd; /* Light gray border around the card */
+        border-radius: 0.625rem; /* 10px */
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        margin-bottom: 1rem; /* Space between the cards */
+    }
+    
+    .card-body {
+        padding : none; /* 20px */
+        height: 21rem;
+
+    }
+
+    .col-md-4.text-center {
+        padding: 1rem; /* Adjust the value as needed */
+        
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    .section-padding {
+        padding: 3.75rem 0; /* 60px 0 */
+    }
+    
+    .feature-list ul {
+        list-style: none;
+        padding-top: 0.3125rem; /* 5px */
+    }
+    
+    .feature-list li {
+        margin: 0.9375rem 0; /* 15px 0 */
+    }
+    
+    .feature-list h4 {
+        /* font-size: 1.2rem; */
+        font-weight: bold;
+    }
+    
+    .feature-list p {
+        /* font-size: 1rem; */
+        color: #555;
+    }
+    
+    .feature-list i {
+        font-size: 2.5rem; /* 2.5rem */
+        color: #000;
+        margin-bottom: 0.9375rem; /* 15px */
+    }
+
+    
+    .section-padding {
+        padding: 2.5rem 0; /* 40px 0 */
+    }
+    
+    .feature-list .col-md-6 {
+        margin-bottom: 1.25rem; /* 20px */
+    }
+    }
