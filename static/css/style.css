@@ -1,9 +1,11 @@
-
+:root {
+    font-size: 62.5%;
+}
 html,body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 20px; 
+    font-size: 2rem; 
     background-color: whitesmoke;
     scroll-behavior: smooth;
 }
@@ -17,17 +19,17 @@ html,body {
     background-color: white;
     color: #000;
     text-align: center;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 1rem; /* 1rem */
+    font-size: 2rem; /* 2rem */
     z-index: 1050; /* Ensure it stays above other content */
 }
 
 /* Rotating dumbbell */
 .loading-icon {
-    width: 30px;
-    height: 30px;
+    width: 3rem; /* 3rem */
+    height: 3rem; /* 3rem */
     animation: spin 2s linear infinite; /* Rotates continuously */
-    margin-left: 15px;
+    margin-left: 1rem; /* 1rem */
     filter: invert(100%) grayscale(100%) contrast(100%);
 }
 
@@ -47,8 +49,8 @@ html,body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 2.5rem;
-    padding: 10px 20px;
+    top: 5rem; /* 5rem */
+    padding: 1rem 1rem; /* 1rem 1rem */
     z-index: 1000; 
     background-color: #000;
     position: fixed; /* Fix the navbar to the top */
@@ -58,10 +60,10 @@ html,body {
 }
 
 .navbar .logo img {
-    font-size: 24px;
+    font-size: 1rem; /* 1rem */
     font-weight: bold;
     color: #fff;
-    height: 30px;;
+    height: 3rem; /* 3rem */
 }
 
 .navbar .nav-links {
@@ -72,35 +74,75 @@ html,body {
 .navbar .nav-links a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 16px;
+    margin: 0 2rem; /* 0 2rem */
+    font-size: 2rem; /* 2rem */
+    transition: transform 0.5s ease; /* Adds smooth animation for color change */
 }
 
-.navbar .nav-links .dropdown,
+.navbar .nav-links a:hover {
+    transform: scale(1.2);
+}
+
+.form-container {
+    background-color: #fff;
+    color: #000;
+    padding: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1); /* Box shadow */
+    text-shadow: 0.0625rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.2); /* Text shadow */
+}
+
+.form-control {
+    width: 100%; /* Makes the text box take up the full width of its container */
+    height: 3.125rem; /* 50px */
+    font-size: 1.2rem; /* Increases the font size inside the text box */
+    padding: 0.625rem; /* 10px */
+    border-radius: 0.3125rem; /* Optional: rounds the corners of the text box */
+    border: 0.0625rem solid #ccc; /* Optional: adds a border */
+}
+.form-control::placeholder {
+    font-size: 1.5rem; /* Increases the placeholder text size */
+    color: #888; /* Optional: changes the placeholder text color */
+}
+
+select {
+    font-size: 1rem; /* Increase the text size of the dropdown */
+    padding: 0.625rem; /* 10px */
+    border-radius: 0.3125rem; /* Optional: rounds the corners of the dropdown */
+    border: 0.0625rem solid #ccc; /* Optional: adds a border */
+}
+
+select option {
+    font-size: 1.5rem; /* Increase the text size of the options */
+}
+
+/* Sai removed this as this is not being used*/
+/* .navbar .nav-links .dropdown,
 .navbar .nav-links .list-gym {
     background-color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem; 
     display: flex;
     align-items: center;
-}
+} 
 
 .navbar .nav-links .dropdown i,
 .navbar .nav-links .list-gym i {
-    margin-left: 5px;
+    margin-left: 0.3125rem;
 }
 
 .navbar .nav-links .signup {
-    background-color: #fff;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 20px;
+    background-color: #ff0000;
+    color: #ff0000;
+    padding: 10rem 20rem; 
+    border-radius: 20rem; 
     font-weight: bold;
-}
+}*/
+
 
 .navbar .hamburger {
     display: none;
-    font-size: 24px;
+    font-size: 2.5rem; /* 2.5rem */
     cursor: pointer;
     color: #fff;
 }
@@ -113,7 +155,7 @@ html,body {
 
     html,body {
         scroll-behavior: smooth;
-        scroll-padding-top: 4rem;
+        scroll-padding-top: 4rem; /* 4rem */
     }
 
     .navbar .nav-links {
@@ -124,7 +166,7 @@ html,body {
     }
 
     .navbar .nav-links a {
-        margin: 5px 0;
+        margin: 0.3125rem 0; /* 5px 0 */
         width: 100%;
         text-align: left;
     }
@@ -143,12 +185,10 @@ html,body {
     .navbar .hamburger {
         display: block;
         position: absolute;
-        right: 20px;
-        top: 10px;
+        right: 1.25rem; /* 20px */
+        top: 0.625rem; /* 10px */
     }
 }
-
-
 
 .hero-section {
     position: relative; /* Set position to relative for the pseudo-element */
@@ -159,10 +199,12 @@ html,body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 80px;
+
+    padding-top: 5rem; /* 80px */
+    padding-left: 0%;
+    padding-right: 0%;
     overflow: hidden; /* Prevent overflow of the pseudo-element */
 }
-
 .hero-section::before {
     content: ""; /* Required for pseudo-elements */
     position: absolute; /* Position it absolutely */
@@ -170,6 +212,7 @@ html,body {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
     background: url("../images/ai-generated-exercise-machines-in-a-gym-free-photo.jpg") no-repeat center center;
     background-size: cover;
     filter: blur(2px); /* Apply blur effect */
@@ -177,17 +220,17 @@ html,body {
 }
 
 .hero-section h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 3rem; /* 3rem */
+    margin-bottom: 1.25rem; /* 20px */
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.3); /* 2px 2px 4px */
     position: relative; /* Position text above the pseudo-element */
     z-index: 1; /* Bring text above the blurred background */
 }
 
 .hero-section .btn {
-    font-size: 1.4rem;
-    padding: 12px 40px;
-    border-radius: 50px;
+    font-size: 1.4rem; /* 1.4rem */
+    padding: 0.75rem 2.5rem; /* 12px 40px */
+    border-radius: 3.125rem; /* 50px */
     transition: transform 0.3s ease-out, background-color 0.3s ease-out; /* Set transition properties here */
     background-color: #000;
     position: relative; /* Position button above the pseudo-element */
@@ -200,17 +243,16 @@ html,body {
 }
 
 .section-padding {
-    padding: 60px 0;
-
+    padding: 3.75rem 0; /* 60px 0 */
 }
 
 .feature-list ul {
     list-style: none;
-    padding-top: 5px;
+    padding-top: 0.3125rem; /* 5px */
 }
 
 .feature-list li {
-    margin: 15px 0;
+    margin: 0.9375rem 0; /* 15px 0 */
 }
 
 .feature-list h4 {
@@ -224,115 +266,127 @@ html,body {
 }
 
 .feature-list i {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* 2.5rem */
     color: #000;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; /* 15px */
 }
+
 .card {
-    border: 1px solid #ddd; /* Light gray border around the card */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: 20px; /* Space between the cards */
+    border: 0.0625rem solid #ddd; /* Light gray border around the card */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 1.25rem; /* Space between the cards */
 }
 
 .card-body {
-    padding: 20px; /* Add padding inside the card */
+    padding: 1.25rem; /* 20px */
 }
 
 .card-title {
     font-weight: bold; /* Make the title bold */
-    margin-bottom: 10px; /* Space below the title */
+    margin-bottom: 0.625rem; /* Space below the title */
 }
 
 .card-text {
     color: #555; /* Slightly darker text color for the description */
 }
-
-
 .footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 1.25rem 0; /* 20px 0 */
     text-align: center;
 }
 
 .footer {
     background-color: #000;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem; /* 40px 20px */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
+
 .footer .left, .footer .center, .footer .right {
     flex: 1;
-    min-width: 200px;
-    margin: 10px;
+    min-width: 12.5rem; /* 200px */
+    margin: 0.625rem; /* 10px */
 }
+
 .footer .left img {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 6.25rem; /* 100px */
+    margin-bottom: 1.25rem; /* 20px */
 }
+
 .footer .left p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
 }
+
 .footer .left form {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    padding-right: 5%;
+    margin-bottom: 1.25rem; /* 20px */
+    padding-right: 5%; /* 5% */
 }
+
 .footer .left input[type="email"] {
-    padding: 10px;
-    width: 200px;
-    margin-right: 10px;
+    padding: 0.625rem; /* 10px */
+    width: 12.5rem; /* 200px */
+    margin-right: 0.625rem; /* 10px */
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     background-color: #333;
     color: #fff;
 }
+
 .footer .left button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     background-color: #fff;
     color: #000;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     cursor: pointer;
 }
+
 .footer .center, .footer .right {
     display: flex;
     flex-direction: column;
-    
 }
+
 .footer .center h3, .footer .right h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px */
 }
+
 .footer .center a, .footer .right a {
     color: #fff;
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; /* 5px */
 }
+
 .footer .right a {
     display: flex;
     align-items: center;
-    padding-left: 40%;
+    padding-left: 40%; /* 40% */
 }
+
 .footer .right a i {
-    margin-right: 10px;
-    padding-right: 10px;
+    margin-right: 0.625rem; /* 10px */
+    padding-right: 0.625rem; /* 10px */
 }
+
 .footer .bottom {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #333;
-    padding-top: 20px;
+    margin-top: 1.25rem; /* 20px */
+    border-top: 0.0625rem solid #333; /* 1px */
+    padding-top: 1.25rem; /* 20px */
 }
+
 .footer .bottom a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 0.625rem; /* 0 10px */
 }
+
 
 /* form */
 /* .container {
@@ -348,55 +402,51 @@ html,body {
     font-size: 24px;
 } */
 
-
 #signup {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     /* height: 100vh; Ensure the section takes full viewport height */
-    /* padding: 0 20px; Add padding on the sides for some spacing */
-
-
+    /* padding: 0 1.25rem; Add padding on the sides for some spacing */
 }
 
 .form-container {
-    border: 2px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
+    border: 0.125rem solid #ccc; /* 2px */
+    padding: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
     background-color: #f9f9f9;
     width: 100%;
-    max-width: 600px; /* Set a maximum width to prevent form from being too wide */
+    max-width: 37.5rem; /* 600px */
     box-sizing: border-box;
-    /* margin-top: 20px; Add some space above the form */
-
+    /* margin-top: 1.25rem; Add some space above the form */
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .form-group input, .form-group select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0.625rem; /* 10px */
+    border: 0.0625rem solid #ccc; /* 1px */
+    border-radius: 0.3125rem; /* 5px */
     box-sizing: border-box;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; /* 5px */
     font-weight: bold;
     color: #000;
 }
 
 #submitBtn {
     width: 100%;
-    padding: 15px;
+    padding: 0.9375rem; /* 15px */
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 25px;
-    font-size: 16px;
+    border-radius: 1.5625rem; /* 25px */
+    font-size: 1rem; /* 16px */
     cursor: pointer;
 }
 
@@ -406,14 +456,12 @@ html,body {
 
 .error {
     color: red;
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
 }
-
-
 
 @media (max-width: 992px) {
     .hero-section h1 {
-        font-size: 14px ;
+        font-size: 0.875rem; /* 14px */
     }
 
     .navbar .nav-links {
@@ -421,11 +469,11 @@ html,body {
     }
     .hero-section .btn {
         font-size: 1.1rem;
-        padding: 10px 30px;
+        padding: 0.625rem 1.875rem; /* 10px 30px */
     }
 
     .section-padding {
-        padding: 40px 0;
+        padding: 2.5rem 0; /* 40px 0 */
     }
 
     .form-inline {
@@ -435,7 +483,7 @@ html,body {
 
     .form-group {
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem; /* 15px */
     }
 
     .form-control {
@@ -448,53 +496,52 @@ html,body {
     }
 
     .feature-list .col-md-6 {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem; /* 20px */
     }
     .footer .right a {
         display: flex;
         align-items: center;
-        padding-left: 30%;
+        padding-left: 30%; /* 30% */
     }
 }
 
-
 .neon-sign {
-font-size: 20px;
-font-weight: bold;
-color: #fff;
-text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000;
-animation: neon-glow 1s infinite alternate;
+    font-size: 1.25rem; /* 20px */
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 0.625rem #000, 0 0 1.25rem #000, 0 0 1.875rem #000; /* 10px, 20px, 30px */
+    animation: neon-glow 1s infinite alternate;
 }
 
 @keyframes neon-glow {
-from {
-text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00;
-}
-to {
-text-shadow: 0 0 10px rgb(234, 0, 255), 0 0 20px rgb(255, 0, 242), 0 0 30px rgb(255, 0, 234);
-}
+    from {
+        text-shadow: 0 0 0.625rem #f00, 0 0 1.25rem #f00, 0 0 1.875rem #f00; /* 10px, 20px, 30px */
+    }
+    to {
+        text-shadow: 0 0 0.625rem rgb(234, 0, 255), 0 0 1.25rem rgb(255, 0, 242), 0 0 1.875rem rgb(255, 0, 234); /* 10px, 20px, 30px */
+    }
 }
 
 .blog-content {
-    padding: 60px 0;
+    padding: 3.75rem 0; /* 60px 0 */
 }
 
 .blog-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* 2.5rem */
+    margin-bottom: 1.25rem; /* 20px */
 }
 
 .blog-content p {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* 1.1rem */
     line-height: 1.6;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px */
 }
 
 .blog-content .btn {
-    font-size: 1.2rem;
-    padding: 12px 40px;
-    border-radius: 50px;
+    font-size: 1.2rem; /* 1.2rem */
+    padding: 0.75rem 2.5rem; /* 12px 40px */
+    border-radius: 3.125rem; /* 50px */
     background-color: #ff9800;
     color: white;
     text-decoration: none;
@@ -506,18 +553,17 @@ text-shadow: 0 0 10px rgb(234, 0, 255), 0 0 20px rgb(255, 0, 242), 0 0 30px rgb(
 
 @media (max-width: 767px) {
     .hero-section h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* 2.5rem */
     }
 
-    html,body{
+    html, body {
         scroll-behavior: smooth;
     }
 
     .hero-section .btn {
-        font-size: 1.1rem;
-        padding: 10px 30px;
+        font-size: 1.1rem; /* 1.1rem */
+        padding: 0.625rem 1.875rem; /* 10px 30px */
     }
-
 
     .navbar .nav-links {
         display: none;
@@ -529,7 +575,7 @@ text-shadow: 0 0 10px rgb(234, 0, 255), 0 0 20px rgb(255, 0, 242), 0 0 30px rgb(
 
     .form-group {
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem; /* 15px */
     }
 
     .form-control {
@@ -538,18 +584,22 @@ text-shadow: 0 0 10px rgb(234, 0, 255), 0 0 20px rgb(255, 0, 242), 0 0 30px rgb(
     }
 
     .footer .timer {
-        font-size: 1rem;
+        font-size: 1rem; /* 1rem */
     }
 }
 
-@media (max-width: 435px){
-    .navbar{
-        top: 3rem;
-
+@media (max-width: 435px) {
+    html, body {
+        font-size: 1.6rem; /* Adjust root font size for small screens */
     }
+    /* .navbar {
+        top: 5rem;
+    } */
+    .work-in-progress {
+        font-size: 1.5rem; /* 1.5rem */
+    } 
 
-    .work-in-progress{
-        font-size:  0.8rem;
-       }
-       
+    .hero-section h1 {
+        font-size: 3rem; /* 3rem */
+    }
 }
