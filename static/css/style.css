@@ -151,8 +151,7 @@ html,body {
 
 
 .hero-section {
-    background: url("../images/ai-generated-exercise-machines-in-a-gym-free-photo.jpg") no-repeat center center;
-     background-size: cover;
+    position: relative; /* Set position to relative for the pseudo-element */
     color: white;
     height: 75vh;
     display: flex;
@@ -161,14 +160,28 @@ html,body {
     align-items: center;
     text-align: center;
     padding-top: 80px;
-    transition: all 0.3s ease;
-    
+    overflow: hidden; /* Prevent overflow of the pseudo-element */
+}
+
+.hero-section::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../images/ai-generated-exercise-machines-in-a-gym-free-photo.jpg") no-repeat center center;
+    background-size: cover;
+    filter: blur(2px); /* Apply blur effect */
+    z-index: 0; /* Send it to the back */
 }
 
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative; /* Position text above the pseudo-element */
+    z-index: 1; /* Bring text above the blurred background */
 }
 
 .hero-section .btn {
@@ -177,6 +190,8 @@ html,body {
     border-radius: 50px;
     transition: transform 0.3s ease-out, background-color 0.3s ease-out; /* Set transition properties here */
     background-color: #000;
+    position: relative; /* Position button above the pseudo-element */
+    z-index: 1; /* Bring button above the blurred background */
 }
 
 .hero-section .btn:hover {
@@ -186,7 +201,7 @@ html,body {
 
 .section-padding {
     padding: 60px 0;
-    padding-top: 10%;
+
 }
 
 .feature-list ul {
@@ -340,8 +355,7 @@ html,body {
     align-items: center; /* Center the content vertically */
     /* height: 100vh; Ensure the section takes full viewport height */
     /* padding: 0 20px; Add padding on the sides for some spacing */
-    background-color: #000;
-    color: white;
+
 
 }
 
@@ -399,7 +413,7 @@ html,body {
 
 @media (max-width: 992px) {
     .hero-section h1 {
-        font-size: 2.5rem;
+        font-size: 14px ;
     }
 
     .navbar .nav-links {
@@ -529,12 +543,13 @@ text-shadow: 0 0 10px rgb(234, 0, 255), 0 0 20px rgb(255, 0, 242), 0 0 30px rgb(
 }
 
 @media (max-width: 435px){
-    /* .navbar{
+    .navbar{
         top: 3rem;
 
-    } */
+    }
 
     .work-in-progress{
         font-size:  0.8rem;
        }
+       
 }

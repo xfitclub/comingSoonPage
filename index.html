@@ -18,17 +18,17 @@
  <!-- Open Graph Meta Tags (For social media sharing) -->
  <meta property="og:title" content="X-Fit - The Future of Fitness">
  <meta property="og:description" content="X-Fit helps you find verified, high-quality gyms in your area with ease. Join the X-Fit movement and get fit without the hassle of endless searching.">
- <meta property="og:image" content="static/images/xfit-logo.png">
- <meta property="og:url" content="https://www.xfit.com">
+ <meta property="og:image" content="static/images/xfit.jpg">
+ <meta property="og:url" content="https://xfitclub.in/">
  <meta property="og:type" content="website">
  
  <!-- Twitter Card Meta Tags -->
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:title" content="X-Fit - The Future of Fitness">
  <meta name="twitter:description" content="Join the X-Fit movement and easily discover gyms near you. Find verified gyms and fitness spaces that suit your needs.">
- <meta name="twitter:image" content="static/images/xfit-logo.png">
+ <meta name="twitter:image" content="static/images/xfit.jpg">
     
-    <title>X-Fit - The Future of Fitness</title>
+    <title>X-Fit-Explore the Best Gyms–Launching Soon</title>
     <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Font Awesome CDN link -->
@@ -66,8 +66,8 @@
     </header>
 
     <section class="hero-section">
-        <h1>The Future of Fitness – Coming This Summer</h1>
-        <a href="#signup" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get Early Access</a>
+        <h1>Explore the Best Gyms – Launching Soon</h1>
+        <a href="#signup" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get updates</a>
     </section>
 
     <section class="section-padding" id="about">
@@ -154,7 +154,7 @@
 
     <section class="section-padding" id="signup">
         <div class="container d-flex flex-column justify-content-center align-items-center">
-            <h2 class="text-center">Be the First to Experience X-Fit</h2>
+            <h2 class="text-center"><b>Be the First to Experience X-Fit</b></h2>
             <div class="form-container">
                 <form id="signupForm" method="post" action="">
                     <div class="form-group">
@@ -193,7 +193,9 @@
                     <div class="form-group">
                         <label for="source">Where did you hear about us?</label>
                         <select id="source" name="source" class="form-control" required onchange="toggleOtherField()">
-                            <option value="social_media">Social Media</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="linkedin">LinkedIn</option>                            
                             <option value="friend_referral">Friend Referral</option>
                             <option value="online_ads">Online Ads</option>
                             <option value="other">Other</option>
@@ -206,7 +208,7 @@
                     </div>
     
                     <input type="hidden" id="date" name="date">
-                    <button type="submit" class="btn btn-primary" id="submitBtn">Sign Up Now!</button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Get updates!</button>
                 </form>
             </div>
         </div>
@@ -315,6 +317,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-66NNJ5XK99"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-66NNJ5XK99');
+    </script>
+
 
 <!-- <script>
     function toggleMenu() {
@@ -449,10 +462,13 @@ window.location.hash = target;
     function toggleOtherField() {
         const source = document.getElementById('source').value;
         const otherField = document.getElementById('otherField');
+        const otherSourceInput = document.getElementById('other_source');
         if (source === 'other') {
             otherField.style.display = 'block';
+            otherSourceInput.setAttribute('required', 'required');
         } else {
             otherField.style.display = 'none';
+            otherSourceInput.removeAttribute('required');
         }
     }
     
