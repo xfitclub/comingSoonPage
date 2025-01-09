@@ -1,5 +1,7 @@
----
 deployment:
   tasks:
+    # Set the deployment path to the desired directory (e.g., public_html)
     - export DEPLOYPATH=/home/m4wz7o4uivbq/public_html/
-    - /bin/cp * $DEPLOYPATH
+    
+    # Copy files from the repository directory to the public_html directory
+    - /bin/cp -r /home/m4wz7o4uivbq/repositories/comingSoonPage/* $DEPLOYPATH
