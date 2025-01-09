@@ -136,29 +136,27 @@ select option {
     font-size: 1.5rem; /* Increase the text size of the options */
 }
 
-/* Sai removed this as this is not being used*/
-/* .navbar .nav-links .dropdown,
+.navbar .nav-links .dropdown,
 .navbar .nav-links .list-gym {
     background-color: #333;
-    padding: 0.625rem 1.25rem;
-    border-radius: 0.3125rem; 
+    padding: 10px 20px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
-} 
+}
 
 .navbar .nav-links .dropdown i,
 .navbar .nav-links .list-gym i {
-    margin-left: 0.3125rem;
+    margin-left: 5px;
 }
 
 .navbar .nav-links .signup {
-    background-color: #ff0000;
-    color: #ff0000;
-    padding: 10rem 20rem; 
-    border-radius: 20rem; 
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
     font-weight: bold;
-}*/
-
+}
 
 .navbar .hamburger {
     display: none;
@@ -192,7 +190,6 @@ select option {
         margin: 0.3125rem 0; /* 5px 0 */
         width: 100%;
         text-align: left;
-        display: none;
     }
 
     .navbar .nav-links .dropdown,
@@ -211,47 +208,6 @@ select option {
         position: absolute;
         right: 1.25rem; /* 20px */
         top: 0.625rem; /* 10px */
-    }
-
-    .hero-section h1 {
-        font-size: 0.875rem; /* 14px */
-    }
-
-    .hero-section .btn {
-        font-size: 1.1rem;
-        padding: 0.625rem 1.875rem; /* 10px 30px */
-    }
-
-    .section-padding {
-        padding: 2.5rem 0; /* 40px 0 */
-    }
-
-    .form-inline {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form-group {
-        width: 100%;
-        margin-bottom: 0.9375rem; /* 15px */
-    }
-
-    .form-control {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .footer .timer {
-        font-size: 1rem;
-    }
-
-    .feature-list .col-md-6 {
-        margin-bottom: 1.25rem; /* 20px */
-    }
-    .footer .right a {
-        display: flex;
-        align-items: center;
-        padding-left: 30%; /* 30% */
     }
 }
 
@@ -301,7 +257,7 @@ select option {
         text-shadow: 0 0 5px #ffffff; /* Initial glow */
     }
     100% {
-        text-shadow: 0 0 20px #0044ff, 0 0 20px #0044ff; /* Stronger glow */
+        text-shadow: 0 0 20px #0044ff, 0 0 30px #0044ff; /* Stronger glow */
     }
 }
 
@@ -321,30 +277,32 @@ select option {
 }
 
 .section-padding {
-    padding: 3.75rem 0; 
+    padding: 3.75rem 0; /* 60px 0 */
 }
 
 .feature-list ul {
     list-style: none;
-    padding-top: 0.3125rem; 
+    padding-top: 0.3125rem; /* 5px */
 }
 
 .feature-list li {
-    margin: 0.9375rem 0; 
+    margin: 0.9375rem 0; /* 15px 0 */
 }
 
 .feature-list h4 {
+    /* font-size: 1.2rem; */
     font-weight: bold;
 }
 
 .feature-list p {
+    /* font-size: 1rem; */
     color: #555;
 }
 
 .feature-list i {
-    font-size: 2.5rem; 
+    font-size: 2.5rem; /* 2.5rem */
     color: #000;
-    margin-bottom: 0.9375rem; 
+    margin-bottom: 0.9375rem; /* 15px */
 }
 
 .card {
@@ -356,7 +314,6 @@ select option {
 
 .card-body {
     padding: 1.25rem; /* 20px */
-    min-height: 13rem;
 }
 
 .card-title {
@@ -532,6 +489,51 @@ select option {
     font-size: 0.75rem; /* 12px */
 }
 
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+    .hero-section .btn {
+        font-size: 1.1rem;
+        padding: 0.625rem 1.875rem; /* 10px 30px */
+    }
+
+    .section-padding {
+        padding: 2.5rem 0; /* 40px 0 */
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 0.9375rem; /* 15px */
+    }
+
+    .form-control {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer .timer {
+        font-size: 1rem;
+    }
+
+    .feature-list .col-md-6 {
+        margin-bottom: 1.25rem; /* 20px */
+    }
+    .footer .right a {
+        display: flex;
+        align-items: center;
+        padding-left: 30%; /* 30% */
+    }
+}
 
 .neon-sign {
     font-size: 1.25rem; /* 20px */
@@ -619,6 +621,7 @@ select option {
 @media (max-width: 435px) {
     html, body {
         font-size: 1.6rem; /* Adjust root font size for small screens */
+        scroll-padding-top: 8rem;
     }
     /* .navbar {
         top: 5rem;
@@ -633,7 +636,12 @@ select option {
 }
 
 
+
 @media (min-width: 768px) and (max-width: 1200px) {
+    html, body {
+        scroll-padding-top: 8rem;
+    }
+
     #whatsxfit{
         margin-top: 8rem;
         margin-left: -4rem;
@@ -657,6 +665,7 @@ select option {
         
     }
 }
+
 
 @media (min-width: 993px) and (max-width: 1200px) {
 
@@ -697,4 +706,4 @@ select option {
     .feature-list .col-md-6 {
         margin-bottom: 1.25rem; /* 20px */
     }
-    }
+}
